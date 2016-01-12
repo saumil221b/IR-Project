@@ -55,7 +55,7 @@ public class Palindrome {
 		scan.close();
 	}
 	
-	static boolean wordPal(String str){
+	static boolean isPalindrome(String str){
 		 int n = str.length();
 		 stringVar = str;
 		 for (int i=0;i<(n / 2) + 1;++i) {
@@ -72,7 +72,7 @@ public class Palindrome {
 		 for(int i = 0;i<tkSize-1; i++){
 		 
 			 String str1 = (String) tokens.get(i);
-			 if (wordPal(str1)==true && stringVar.length()!=1){
+			 if (isPalindrome(str1)==true && stringVar.length()!=1){
 				 
 				 if(palindromeHash.containsKey(stringVar)){
 						
@@ -95,7 +95,7 @@ public class Palindrome {
 				 str4 = str4 + str2;
 				 str3 = str3+str2;
 				
-				 if (wordPal(str3)==true){
+				 if (isPalindrome(str3)==true){
 					 if(palindromeHash.containsKey(str4)){
 							
 						 int j2 = palindromeHash.get(str4);
